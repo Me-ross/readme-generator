@@ -110,7 +110,7 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
-## 6. Video
+## Video
 You can see a video demonstration for this app [here](https://app.castify.com/view/662a9635-d4c9-4ba1-b040-c6e1c93a1d95)
 
 ## License
