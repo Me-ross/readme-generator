@@ -1,5 +1,5 @@
-# aksdjfh
-[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+# README Generator
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Table of Contenets
 
@@ -13,32 +13,28 @@
 - [Questions](#Questions)
 
 ## Description
-akdjfh
+Create a READMe file using inquirer and user inputs through terminal
 
 ## Installation
-- akdhf
-- An object named questions is created using the input from the questions asked in the terminal. You can see an example in the following image:
-!(./Images/questions-object.jpg)
+run program with node index and answer questions
 
 ## Usage
-qry
+save time to allocate to other tasks of creating code for project
 
 ## Contributing
-adfh
+Anyone can contribute
 
 ## Tests
-ns
+make sure code works
 
 ## 6. Video
-You can see a video demonstration for this app [here](https://app.castify.com/view/509cd483-f6a9-451f-a79e-6b22024e6001)
+You can see a video demonstration for this app [here](https://app.castify.com/view/662a9635-d4c9-4ba1-b040-c6e1c93a1d95)
 
 ## License
-Eclipse:
-Please see https://opensource.org/licenses/EPL-1.0 to get detailed information for this license.
-- A list of choices for different licenses is provided at the terminal input. See example below:
-!(./Images/license-choices.jpg)
+Mozilla:
+Visit: https://opensource.org/licenses/MPL-2.0 to get detailed information for this license.
 
 ## Questions
-- I can be reached at adsf with any additional questions.
-- You can fined me [HERE](af) on GitHub
+- I can be reached at me@gmail.com with any additional questions.
+- You can fined me [HERE](https://github.com/Me-ross/readme-generator) on GitHub
 

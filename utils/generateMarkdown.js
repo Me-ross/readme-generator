@@ -73,12 +73,13 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `Please see ${renderLicenseLink(license)} to get detailed information for this license.`
+    return `Visit: ${renderLicenseLink(license)} to get detailed information for this license.`
   } else {
     return ''
   }
 }
 // TODO: Create a function to generate markdown for README
+
 function generateMarkdown(data){
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -98,9 +99,7 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Installation
-- ${data.installation}
-- An object named questions is created using the input from the questions asked in the terminal. You can see an example in the following image:
-!(./Images/questions-object.jpg)
+${data.installation}
 
 ## Usage
 ${data.usage}
@@ -112,13 +111,11 @@ ${data.contributing}
 ${data.tests}
 
 ## 6. Video
-You can see a video demonstration for this app [here](https://app.castify.com/view/509cd483-f6a9-451f-a79e-6b22024e6001)
+You can see a video demonstration for this app [here](https://app.castify.com/view/662a9635-d4c9-4ba1-b040-c6e1c93a1d95)
 
 ## License
 ${data.license}:
 ${renderLicenseSection(data.license)}
-- A list of choices for different licenses is provided at the terminal input. See example below:
-!(./Images/license-choices.jpg)
 
 ## Questions
 - I can be reached at ${data.email} with any additional questions.
