@@ -1,39 +1,39 @@
 
-  # sdfkjh
+# readme generator
 
-  ## Table of Contenets
-  1. [Desription](#Description)
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)
-  4. [Contributing](#Contributing)
-  5. [Tests](#Tests)
-  6. [Video](#Video)
-  7. [License](#License)
-  8. [Questions](#Questions)
-  
-  ## 1. Description
-  adfjh
+## Table of Contenets
 
+- [Desription](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Video](#Video)
+- [License](#License)
+- [Questions](#Questions)
 
-  ## 2. Installation
-  woim
+## Description
+create readme with inquirer
 
-  ## 3. Usage
-  z,o
+## Installation
+node index
 
-  ## 4. Contributing
-  awo
+## Usage
+create markdowns easily
 
-  ## 5. Tests
-  mdkd
+## Contributing
+anyone can contribute
 
-  ## 6. Video
+## Tests
+none at this time
 
-  ## 7. License
-  Boost
-  Please see [license] to get detailed information for this license.
+## 6. Video
 
-  ## 8. Questions
-  - I can be reached at aldoe with any additional questions.
-  - You can fine me [HERE]adk on GitHub
+## License
+Apache
+Please see [license] to get detailed information for this license.
+
+## Questions
+- I can be reached at me@gmail.com with any additional questions.
+- You can fine me [HERE]me on GitHub
 

@@ -75,45 +75,45 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data){
   return `
-  # ${data.title}
+# ${data.title}
 
-  ## Table of Contenets
-  1. [Desription](#Description)
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)
-  4. [Contributing](#Contributing)
-  5. [Tests](#Tests)
-  6. [Video](#Video)
-  7. [License](#License)
-  8. [Questions](#Questions)
-  
-  ## 1. Description
-  ${data.description}
+## Table of Contenets
 
+- [Desription](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Video](#Video)
+- [License](#License)
+- [Questions](#Questions)
 
-  ## 2. Installation
-  ${data.installation}
+## Description
+${data.description}
 
-  ## 3. Usage
-  ${data.usage}
+## Installation
+${data.installation}
 
-  ## 4. Contributing
-  ${data.contributing}
+## Usage
+${data.usage}
 
-  ## 5. Tests
-  ${data.tests}
+## Contributing
+${data.contributing}
 
-  ## 6. Video
+## Tests
+${data.tests}
 
-  ## 7. License
-  ${data.license}
-  Please see [license] to get detailed information for this license.
+## 6. Video
 
-  ## 8. Questions
-  - I can be reached at ${data.email} with any additional questions.
-  - You can fine me [HERE]${data.github} on GitHub
+## License
+${data.license}
+Please see [license] to get detailed information for this license.
+
+## Questions
+- I can be reached at ${data.email} with any additional questions.
+- You can fine me [HERE]${data.github} on GitHub
 
 `;
 }
