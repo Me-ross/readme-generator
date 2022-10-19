@@ -1,21 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-//   const badge = {
-//       Apache: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-//       MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-//       BSD3: '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
-//       Boost: '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
-//       Eclipse: '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
-//       GNUv3: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
-//       Mozilla: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
-//       Unlicense: '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)',
-//       // ?none?: '![License Badge](https://shields.io/badge/license-" + license + "-green)",
-//   }
-//   console.log(badge)
-//   return badge[license]
-// }
-
   switch(license) {
     case "Apache":
       badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -53,41 +38,46 @@ function renderLicenseLink(license) {
   let licenseLink;
 
   switch(license) {
+    case "Apache":
+      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+      break;
     case "MIT":
       licenseLink = "https://mit-license.org/";
       break;
-    case "BSD":
+    case "BSD3":
       licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
       break;
-    case "GPL":
+    case "Boost":
+      licenseLink = "https://opensource.org/licenses/BSL-1.0";
+      break;
+    case "Eclipse":
+      licenseLink = "https://opensource.org/licenses/EPL-1.0";
+      break;
+    case "GNUv3":
       licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
       break;
-    case "Apache":
-      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+    case "Mozilla":
+      licenseLink = "https://opensource.org/licenses/MPL-2.0";
+      break;
+    case "Unlicense":
+      licenseLink = "https://opensource.org/licenses/unlicense";
       break;
     default:
       licenseLink = "";
       break;
   }
-  
   return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let licenseSect = "";
-
-  // if a license has been selected, create License section
-  // with link to license information
-  if (license != "None") {
-    licenseSect += "## License\n"
-    licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed information for this license\n";
+  if (license) {
+    return `Please see ${renderLicenseLink(license)} to get detailed information for this license.`
+  } else {
+    return ''
   }
-
-  return licenseSect;
 }
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data){
   return `
@@ -124,10 +114,10 @@ ${data.tests}
 
 ## License
 ${data.license}
-Please see [license] to get detailed information for this license.
+${renderLicenseSection(data.license)}
 
 ## Questions
-- I can be reached at ${data.email} with any additional questions.
+- I can be reached at [${data.email}]${data.email} with any additional questions.
 - You can fine me [HERE]${data.github} on GitHub
 
 `;
