@@ -113,12 +113,12 @@ ${data.tests}
 ## 6. Video
 
 ## License
-${data.license}
+${data.license}:
 ${renderLicenseSection(data.license)}
 
 ## Questions
-- I can be reached at [${data.email}]${data.email} with any additional questions.
-- You can fine me [HERE]${data.github} on GitHub
+- I can be reached at ${data.email} with any additional questions.
+- You can fine me [HERE](${data.github}) on GitHub
 
 `;
 }
