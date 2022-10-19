@@ -51,21 +51,36 @@ const questions = [
         message: "What is your GitHub username?",
         name: 'github',
      }
-];
+];   
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    
-    fs.writeFile('README.md', data, function (err) {
-        err ? console.log(err) : console.log("README created!")
-    });
-}
+// function writeToFile(fileName, data) {
+//   console.log(data)
+
+//     fs.writeFile('README.md', data, function (err) {
+//         err ? console.log(err) : console.log("README created!")
+//     });
+// }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
-    .then (answers => writeToFile(generateMarkdown(answers)))
+  return inquirer.prompt(questions)
+    .then((answers) => {
+      const markdown = generateMarkdown(answers)
+      fs.writeFile('README.md', markdown, function (err) {
+        err ? console.log(err) : console.log("README created!")
+    });
+  })
+  .catch((error) => {
+    console.log(error)
+  })
 }
 
 // Function call to initialize app
-init();
+init()
+
+// function init() {
+//   inquirer.prompt(questions)
+//   .then (answers => writeToFile(generateMarkdown(answers)))
+// }
