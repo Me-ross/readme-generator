@@ -63,7 +63,7 @@ const questions = [
 //     });
 // }
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app and write README file
 function init() {
   return inquirer.prompt(questions)
     .then((answers) => {

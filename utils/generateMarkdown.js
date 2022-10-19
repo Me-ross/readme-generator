@@ -1,9 +1,22 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge = "";
+//   const badge = {
+//       Apache: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+//       MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+//       BSD3: '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+//       Boost: '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
+//       Eclipse: '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
+//       GNUv3: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+//       Mozilla: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+//       Unlicense: '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)',
+//       // ?none?: '![License Badge](https://shields.io/badge/license-" + license + "-green)",
+//   }
+//   console.log(badge)
+//   return badge[license]
+// }
 
-  switch(answers.license) {
+  switch(license) {
     case "Apache":
       badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
       break;
@@ -31,6 +44,7 @@ function renderLicenseBadge(license) {
     default:
       badge = "![License Badge](https://shields.io/badge/license-" + license + "-green)";
     }
+    return badge
 }
 
 // TODO: Create a function that returns the license link
@@ -78,6 +92,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data){
   return `
 # ${data.title}
+${renderLicenseBadge(data.license)}
 
 ## Table of Contenets
 
