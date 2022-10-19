@@ -99,7 +99,8 @@ ${data.description}
 
 ## Installation
 - ${data.installation}
-- An object named questions is created using the input from the questions asked in the terminal. You can see an example in the following image:(./Images/questions-object.jpg)
+- An object named questions is created using the input from the questions asked in the terminal. You can see an example in the following image:
+!(./Images/questions-object.jpg)
 
 ## Usage
 ${data.usage}
@@ -117,11 +118,11 @@ You can see a video demonstration for this app [here](https://app.castify.com/vi
 ${data.license}:
 ${renderLicenseSection(data.license)}
 - A list of choices for different licenses is provided at the terminal input. See example below:
-(./Images/license-choices.jpg)
+!(./Images/license-choices.jpg)
 
 ## Questions
 - I can be reached at ${data.email} with any additional questions.
-- You can fine me [HERE](${data.github}) on GitHub
+- You can fined me [HERE](${data.github}) on GitHub
 
 `;
 }
