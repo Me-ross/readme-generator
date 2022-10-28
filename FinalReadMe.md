@@ -8,7 +8,7 @@ Due Date 10/18/2022
 ## Table of Contenets
 
 - [Desription](#Description)
-- [User Story](#User)
+- [User Story](#Story)
 - [Requirements](#Requirements)
 - [Video](#Video)
 - [Questions](#Questions)
@@ -16,7 +16,7 @@ Due Date 10/18/2022
 ## Description
 Build a command line application that creates a README file based on the user inputs.
 
-## User Story
+## Story
 ```md
 AS A developer
 I WANT a README generator
