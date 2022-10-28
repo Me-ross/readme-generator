@@ -29,12 +29,13 @@ SO THAT I can quickly create a professional README for a new project
 - Questions to be: Title, Description, Installation, Usage, Contribution, and Test information
 - As each prompt is answered a coresponding section of README is created
 - Prompt with choices for License, once selected icon with license badge to be displayed at the begining of the README and link to more information about the license in the license section.
-- Image shows the choices for the license ![command line showing mutliple license choices](./Images/license-choices.jpg)
+- Image shows the choices for the license:
+![command line showing mutliple license choices](./Images/license-choices.jpg)
 - Description section created with Email and github profile links for the project creator
-- Image shows all choices for the prompt questions and the final array that holds all answers. 
+- Image shows all choices for the prompt questions and the final array that holds all answers: 
 ![command line with questions and answers](./Images/questions-object.jpg)
-- The following image shows a mockup of the generated README appearnace.
-![](./Images/README.jpg)
+- The following image shows a mockup of the generated README appearnace:
+![final readme file](./Images/README.jpg)
 
 ## Video
 You can see a video demonstration for this app [here](https://app.castify.com/view/662a9635-d4c9-4ba1-b040-c6e1c93a1d95)
